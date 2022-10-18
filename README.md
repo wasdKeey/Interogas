@@ -1,4 +1,4 @@
-<h1>Interogas<h1>
+Interogas
 
 Interogas is a politcal and community platform that will be used in Mexico to gather and streamline polling data for their elections. Administrators and users will be able to configure or view live and dynamic election data much like American polling data. Interogas is an MVP and due to the proprietary nature of the code I can only provide code snippets of my code. This repository contains SQL, .NET, and React code.
 
