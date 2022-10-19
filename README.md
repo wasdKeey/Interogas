@@ -1,8 +1,8 @@
-Interogas
+# **Interogas**
 
-Interogas is a politcal and community platform that will be used in Mexico to gather and streamline polling data for their elections. Administrators and users will be able to configure or view live and dynamic election data much like American polling data. Interogas is an MVP and due to the proprietary nature of the code I can only provide code snippets of my code. This repository contains SQL, .NET, and React code.
+### Interogas is a politcal and community platform that will be used in Mexico to gather and streamline polling data for their elections. Administrators and users will be able to configure or view live and dynamic election data much like American polling data. Interogas is an MVP and due to the proprietary nature of the code I can only provide code snippets of my code. This repository contains SQL, .NET, and React code.
 
-My role as a software engineer was to implement the functionality of the Contact page and utilize a third party email api, as well as style and configure poll data card template and their functinality . I was required to handle all the coding from the backend to the frontend. Below is a list of the actions I took to accomplish my responsibilities.
+*My role as a software engineer was to implement the functionality of the Contact page and utilize a third party email api, as well as style and configure poll data card template and their functinality . I was required to handle all the coding from the backend to the frontend. Below is a list of the actions I took to accomplish my responsibilities.*
 
 ● Developed and structured the administrator dashboard functionality from front-end to back-end.
 
