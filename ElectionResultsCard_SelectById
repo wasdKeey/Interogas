@@ -1,1 +1,46 @@
+ALTER proc [dbo].[ElectionResultsCard_SelectById]
+							@Id int
+AS
+
+/*
+
+Declare @Id int = 1
+Execute dbo.ElectionResultsCard_SelectById @Id
+
+
+
+
+*/
+
+BEGIN
+
+SELECT 
+		c.[Id]
+		,et.[Name] as ElectionName
+		 ,s.Name as Region
+		,c.[AvatarUrl] 
+		,c.[GivenName] 
+		,c.[Surnames] 
+		,er.[Votes]
+		,er.[Percentage]
+		,p.[Name] as PartyName
+		,p.[ColorHEX] as PartyColor
+		,p.[Code] as PartyCode
+		,p.[Logo] as PartyLogo
+	  
+	  FROM [dbo].Elections as e inner join dbo.ElectionResults as er
+							ON e.Id = er.ElectionId
+							INNER JOIN dbo.Candidates as c
+							ON c.Id = er.CandidateId
+							INNER JOIN dbo.ElectionTypes as et
+							ON et.Id = e.ElectionTypeId
+							INNER JOIN dbo.Parties as p
+							ON p.Id = c.Id
+							INNER JOIN dbo.RegionTypes as r 
+							ON r.Id = e.RegionId
+							INNER JOIN dbo.States as s 
+							ON r.Id = s.Id
+						
+
+	WHERE er.CandidateId = @Id
 
