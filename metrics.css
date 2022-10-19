@@ -1,0 +1,96 @@
+img{
+    width: 100px;
+    height: 100px;
+}
+
+.icon {
+    width:5%;
+    height:50%;
+}
+
+.icon-r {
+    width:20px;
+    height:25px;
+}
+
+.left-div{
+    Text-align:left;
+    float:left;
+}
+
+.right-div{
+    Text-align:right;
+    float: right;    
+}
+
+.table-head {
+    background-color:#eef2f7;
+}
+
+.drop {
+    align-self: flex-end;
+}
+
+.left{
+    align-self: flex-start;
+}
+
+.avatar{
+    float: right;
+    height: 75px;
+    width: 100px;
+    padding: 0px;
+    margin-right: 5px;
+
+}
+
+.avatarTwo{
+    float: left;
+    height: 75px;
+    width: 100px;
+    padding: 0px;
+    margin-left: 5px;
+}
+
+.rAvatar {
+    height: 45px;
+    width: 35px;
+}
+
+.flip {
+    transform:rotateY(180deg);
+}
+
+.progressBar{
+    display: block;
+    height: 25px;
+    background-color:#d4d7dc;
+    margin-bottom: 12px;
+}
+
+
+.pBar {
+     height: '25px'; 
+     width: '978px';
+}
+
+.row {
+    --ct-gutter-x: 0px;
+}
+
+.big {
+    font-size: x-large;
+    text-transform: uppercase;
+}
+
+.noSpace{
+    padding: 0px;
+    margin: 0px;
+}
+
+.space {
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  padding: auto;
+}
