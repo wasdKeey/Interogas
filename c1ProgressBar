@@ -1,0 +1,43 @@
+import React from 'react';
+import { ProgressBar } from 'react-bootstrap';
+import PropTypes from 'prop-types';
+import debug from 'sabio-debug';
+import './metrics.css';
+
+const _logger = debug.extend('CandidateProgressBar');
+
+function CandidateProgressBar(props) {
+    _logger(props);
+
+    return (
+        <>
+            <ProgressBar
+                className="progress-bar pBar left-div "
+                variant="primary"
+                key={1}
+                min={0}
+                max={100}
+                label={`${props.progress.Percentage}%`}
+                role="progressbar"
+                style={{ width: `${props.progress.Percentage}%`, backgroundColor: props.progress.PartyColor }}
+            />
+        </>
+    );
+}
+
+CandidateProgressBar.propTypes = {
+    progress: PropTypes.shape({
+        Id: PropTypes.number,
+        AvatarUrl: PropTypes.string,
+        GivenName: PropTypes.string,
+        Surnames: PropTypes.string,
+        Votes: PropTypes.number,
+        Percentage: PropTypes.number,
+        PartyName: PropTypes.string,
+        PartyColor: PropTypes.string,
+        PartyCode: PropTypes.string,
+        PartyLogo: PropTypes.string,
+    }),
+};
+
+export default CandidateProgressBar;
