@@ -1,9 +1,3 @@
-import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
-import PropTypes from 'prop-types';
-import debug from 'sabio-debug';
-import './metrics.css';
-
 const _logger = debug.extend('CandidateOne');
 
 function CandidateOne(props) {
